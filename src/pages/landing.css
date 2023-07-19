@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;0,800;0,900;1,100&display=swap");
+
+.mainContainer {
+  display: flex;
+  gap: 1px;
+  justify-content: space-between;
+  height: 95vh;
+}
+
+.content {
+  /* background-color: red; */
+  font-family: poppins;
+  width: 40vw;
+  margin: auto 0;
+}
+
+.content h1 {
+  font-size: 3rem;
+}
+
+.picture {
+  margin: auto 0;
+}
+
+.picture img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 450px;
+  height: 450px;
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(70%);
+  transition: 0.3s ease-in-out;
+}
+
+.picture img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.landingBtn {
+  display: flex;
+  gap: 20px;
+}
+
+.landingBtn button {
+  padding: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.landingBtn button:last-child {
+  border: 1px solid #0dad7d;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+  color: #0dad7d;
+}
+
+.landingBtn button:last-child:hover {
+  background-color: #0dad7d;
+  color: #fff;
+}
+
+.landingBtn button:first-child {
+  background-color: #0dad7d;
+  border: 1px solid #0dad7d;
+  color: #fff;
+  transition: 0.3s ease-in;
+}
+
+.landingBtn button:first-child:hover {
+  background-color: #fff;
+  color: #0dad7d;
+}
+
+@media screen and (max-width: 770px) {
+  .mainContainer {
+    display: block;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+  }
+
+  .content {
+    text-align: center;
+    width: 100vw;
+  }
+
+  .picture img {
+    display: none;
+  }
+
+  .landingBtn button {
+    /* width: 20vw; */
+    display: block;
+    /* flex-direction: column;
+    justify-content: center; */
+    align-items: center;
+    margin: 0 auto;
+    /* gap: 0px; */
+  }
+}
